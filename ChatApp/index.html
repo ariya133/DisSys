@@ -9,7 +9,7 @@
 <div class="container">
     <br>
     <div class="jumbotron">
-        <h1 class="dispaly-4">Start Chatting</h1>
+        <h1 class="dispaly-4">Start Chatting test v 2</h1>
         <br>
         <input id="txtName" class="form-control" placeholder="Name" type="text">
         <br>
@@ -30,13 +30,16 @@
             var chatMessage = {
                 name: $("#txtName").val(), chat: $("#txtMessage").val()
             }
-            postChat(chatMessage)
+            socket.emit('chat', chatMessage);
         })
     })
+<<<<<<< HEAD
     
     function postChat(chat) {
         $.post("http://localhost:3020/chats", chat)
     }
+=======
+>>>>>>> f3342ac342bd76f05b1b8bcb4a51b1b14445946b
 
     function getChats() {
         $.get("/chats", (chats) => {
