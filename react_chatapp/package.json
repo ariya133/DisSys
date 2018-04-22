@@ -1,8 +1,9 @@
 {
-  "name": "my-app",
+  "name": "react_chatapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.4.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4"
