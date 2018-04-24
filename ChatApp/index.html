@@ -33,6 +33,13 @@
             socket.emit('chat', chatMessage);
         })
     })
+<<<<<<< HEAD
+    
+    function postChat(chat) {
+        $.post("http://localhost:3020/chats", chat)
+    }
+=======
+>>>>>>> f3342ac342bd76f05b1b8bcb4a51b1b14445946b
 
     function getChats() {
         $.get("/chats", (chats) => {
